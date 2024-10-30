@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; /* Changed text color to white for visibility */
+            background-color: black; /* Set background color to black */
+        }
+        header {
+            background-image: url("images/background.jpg"); /* You can replace this with your own image */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white; /* Ensure text is visible */
+            background-size: cover;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #3700b3;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .about {
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project {
+            background: #333; /* Dark background for project cards */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            flex: 1 0 calc(30% - 20px);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: white; /* Ensure text is visible in project cards */
+        }
+        .project img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .project h3 {
+            margin: 0;
+            padding: 10px;
+        }
+        .project p {
+            padding: 0 10px 10px;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            .project {
+                flex: 1 0 calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .project {
+                flex: 1 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rathesh Kumar</h1>
+        <p>Web Developer | XR Developer | Native App Developer | ML Engineer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+    
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with experience in creating dynamic and responsive web applications. Currently, I work as an XR developer while pursuing my studies, where I apply my skills in immersive technologies.
+        </p>
+        <p>
+            My expertise spans multiple domains, including native app development and machine learning engineering. I have a solid foundation in Python and am skilled in full-stack development, enabling me to build robust applications from the ground up.
+        </p>
+        <p>
+            I also enjoy developing mobile applications using React Native and Flutter, bringing ideas to life across different platforms. When I’m not coding, you can find me gaming, as I believe it fuels my creativity and problem-solving skills.
+        </p>
+        <p>I am a student, freelancer and also working as an xr developer</p>
+    </section>
+    
+    
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="images\project1.png" alt="Project 1" onclick="openModal(this.src)">
+                <h3>Hand Cricket Web Game</h3>
+                <p>Hand Cricket Game where you can play cricket against AI</p>
+                <a href="https://handcricketsp.netlify.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <video src="images\demo.mp4" height="400px" width="600px" controls alt="Project 2"></video>
+                <h3>VR Multiplayer Template</h3>
+                <p>This is an VR VR-Multiplayer-Template made using unity and photon fusion</p>
+                <a href="https://github.com/Rathesh0709/VR-Multiplayer-Template" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/rathesh-kumar-427946335/" target=_blank"">LinkedIn</a>
+        <a href="https://github.com/Rathesh0709" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
